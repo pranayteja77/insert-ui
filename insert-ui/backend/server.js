@@ -19,9 +19,9 @@ app.use(express.urlencoded({ extended: true }));
 // Configure CORS for production
 const corsOptions = {
   origin: [
-    'http://localhost:5173', // Local development
-    process.env.FRONTEND_URL || 'https://insert-ui.vercel.app', // Production frontend
-    (process.env.FRONTEND_URL || 'https://insert-ui.vercel.app').replace('https://', 'https://www.') // WWW version
+    'http://localhost:5173',
+    'https://insert-1izm0ftvv-pranaytejas-projects-6e87932f.vercel.app', // Your Vercel URL
+    'https://www.insert-1izm0ftvv-pranaytejas-projects-6e87932f.vercel.app'
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
